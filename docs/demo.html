@@ -1,0 +1,1464 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Amaze UI 风格 Chosen 使用演示 | Amaze UI 插件</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png"
+        href="http://a.static.amazeui.org/assets/i/favicon.png">
+  <link rel="stylesheet"
+        href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
+  <link rel="stylesheet" href="http://a.static.amazeui.org/assets/plugin/css/app.min.css">
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../amazeui.chosen.css"/>
+</head>
+<body class="am-plugin">
+<header class="am-topbar am-topbar-inverse">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="http://amazeui.org" class="am-text-ir">Amaze UI</a>
+      <span class="am-badge am-badge-danger">Plugin</span>
+    </h1>
+  </div>
+</header>
+<section class="amp-banner">
+  <div class="am-container">
+    <h1>Amaze UI Chosen</h1>
+    <p class="">使用 Amaze UI 样式风格的 jQuery Chosen 插件。</p>
+      <p>
+        <a class="github-button" href="https://github.com/amazeui/chosen">Star</a>
+        <a class="github-button" href="https://github.com/amazeui/chosen">Fork</a>
+        <a class="github-button" href="https://github.com/amazeui/chosen/archive/master.zip">Download</a>
+      </p>
+  </div>
+</section>
+
+<section class="amp-main">
+  <div class="am-container">
+    <h2><a name="Chosen%20%E4%BD%BF%E7%94%A8%E6%BC%94%E7%A4%BA" class="anchor" href="#Chosen%20%E4%BD%BF%E7%94%A8%E6%BC%94%E7%A4%BA"><span class="header-link"></span></a>Chosen 使用演示</h2><h3><a name="%E5%8D%95%E9%80%89%E6%A1%86" class="anchor" href="#%E5%8D%95%E9%80%89%E6%A1%86"><span class="header-link"></span></a>单选框</h3><div class="am-g">
+  <div class="am-u-sm-6">
+    <p>浏览器默认样式</p>
+    <select data-placeholder="Choose a Country..." style="width:350px;" tabindex="1">
+      <option value=""></option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Aland Islands">Aland Islands</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="American Samoa">American Samoa</option>
+      <option value="Andorra">Andorra</option>
+      <option value="Angola">Angola</option>
+      <option value="Anguilla">Anguilla</option>
+      <option value="Antarctica">Antarctica</option>
+      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Armenia">Armenia</option>
+      <option value="Aruba">Aruba</option>
+      <option value="Australia">Australia</option>
+      <option value="Austria">Austria</option>
+      <option value="Azerbaijan">Azerbaijan</option>
+      <option value="Bahamas">Bahamas</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Barbados">Barbados</option>
+      <option value="Belarus">Belarus</option>
+      <option value="Belgium">Belgium</option>
+      <option value="Belize">Belize</option>
+      <option value="Benin">Benin</option>
+      <option value="Bermuda">Bermuda</option>
+      <option value="Bhutan">Bhutan</option>
+      <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+      <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+      <option value="Botswana">Botswana</option>
+      <option value="Bouvet Island">Bouvet Island</option>
+      <option value="Brazil">Brazil</option>
+      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+      <option value="Brunei Darussalam">Brunei Darussalam</option>
+      <option value="Bulgaria">Bulgaria</option>
+      <option value="Burkina Faso">Burkina Faso</option>
+      <option value="Burundi">Burundi</option>
+      <option value="Cambodia">Cambodia</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Canada">Canada</option>
+      <option value="Cape Verde">Cape Verde</option>
+      <option value="Cayman Islands">Cayman Islands</option>
+      <option value="Central African Republic">Central African Republic</option>
+      <option value="Chad">Chad</option>
+      <option value="Chile">Chile</option>
+      <option value="China">China</option>
+      <option value="Christmas Island">Christmas Island</option>
+      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Comoros">Comoros</option>
+      <option value="Congo">Congo</option>
+      <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+      <option value="Cook Islands">Cook Islands</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Cote D&apos;ivoire">Cote D'ivoire</option>
+      <option value="Croatia">Croatia</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Curacao">Curacao</option>
+      <option value="Cyprus">Cyprus</option>
+      <option value="Czech Republic">Czech Republic</option>
+      <option value="Denmark">Denmark</option>
+      <option value="Djibouti">Djibouti</option>
+      <option value="Dominica">Dominica</option>
+      <option value="Dominican Republic">Dominican Republic</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Egypt">Egypt</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="Equatorial Guinea">Equatorial Guinea</option>
+      <option value="Eritrea">Eritrea</option>
+      <option value="Estonia">Estonia</option>
+      <option value="Ethiopia">Ethiopia</option>
+      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+      <option value="Faroe Islands">Faroe Islands</option>
+      <option value="Fiji">Fiji</option>
+      <option value="Finland">Finland</option>
+      <option value="France">France</option>
+      <option value="French Guiana">French Guiana</option>
+      <option value="French Polynesia">French Polynesia</option>
+      <option value="French Southern Territories">French Southern Territories</option>
+      <option value="Gabon">Gabon</option>
+      <option value="Gambia">Gambia</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Germany">Germany</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Gibraltar">Gibraltar</option>
+      <option value="Greece">Greece</option>
+      <option value="Greenland">Greenland</option>
+      <option value="Grenada">Grenada</option>
+      <option value="Guadeloupe">Guadeloupe</option>
+      <option value="Guam">Guam</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="Guernsey">Guernsey</option>
+      <option value="Guinea">Guinea</option>
+      <option value="Guinea-bissau">Guinea-bissau</option>
+      <option value="Guyana">Guyana</option>
+      <option value="Haiti">Haiti</option>
+      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Hong Kong">Hong Kong</option>
+      <option value="Hungary">Hungary</option>
+      <option value="Iceland">Iceland</option>
+      <option value="India">India</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Ireland">Ireland</option>
+      <option value="Isle of Man">Isle of Man</option>
+      <option value="Israel">Israel</option>
+      <option value="Italy">Italy</option>
+      <option value="Jamaica">Jamaica</option>
+      <option value="Japan">Japan</option>
+      <option value="Jersey">Jersey</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Kazakhstan">Kazakhstan</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Kiribati">Kiribati</option>
+      <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People's Republic of</option>
+      <option value="Korea, Republic of">Korea, Republic of</option>
+      <option value="Kuwait">Kuwait</option>
+      <option value="Kyrgyzstan">Kyrgyzstan</option>
+      <option value="Lao People&apos;s Democratic Republic">Lao People's Democratic Republic</option>
+      <option value="Latvia">Latvia</option>
+      <option value="Lebanon">Lebanon</option>
+      <option value="Lesotho">Lesotho</option>
+      <option value="Liberia">Liberia</option>
+      <option value="Libya">Libya</option>
+      <option value="Liechtenstein">Liechtenstein</option>
+      <option value="Lithuania">Lithuania</option>
+      <option value="Luxembourg">Luxembourg</option>
+      <option value="Macao">Macao</option>
+      <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+      <option value="Madagascar">Madagascar</option>
+      <option value="Malawi">Malawi</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Maldives">Maldives</option>
+      <option value="Mali">Mali</option>
+      <option value="Malta">Malta</option>
+      <option value="Marshall Islands">Marshall Islands</option>
+      <option value="Martinique">Martinique</option>
+      <option value="Mauritania">Mauritania</option>
+      <option value="Mauritius">Mauritius</option>
+      <option value="Mayotte">Mayotte</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+      <option value="Moldova, Republic of">Moldova, Republic of</option>
+      <option value="Monaco">Monaco</option>
+      <option value="Mongolia">Mongolia</option>
+      <option value="Montenegro">Montenegro</option>
+      <option value="Montserrat">Montserrat</option>
+      <option value="Morocco">Morocco</option>
+      <option value="Mozambique">Mozambique</option>
+      <option value="Myanmar">Myanmar</option>
+      <option value="Namibia">Namibia</option>
+      <option value="Nauru">Nauru</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="New Caledonia">New Caledonia</option>
+      <option value="New Zealand">New Zealand</option>
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="Niger">Niger</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Niue">Niue</option>
+      <option value="Norfolk Island">Norfolk Island</option>
+      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+      <option value="Norway">Norway</option>
+      <option value="Oman">Oman</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Palau">Palau</option>
+      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+      <option value="Panama">Panama</option>
+      <option value="Papua New Guinea">Papua New Guinea</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Peru">Peru</option>
+      <option value="Philippines">Philippines</option>
+      <option value="Pitcairn">Pitcairn</option>
+      <option value="Poland">Poland</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Puerto Rico">Puerto Rico</option>
+      <option value="Qatar">Qatar</option>
+      <option value="Reunion">Reunion</option>
+      <option value="Romania">Romania</option>
+      <option value="Russian Federation">Russian Federation</option>
+      <option value="Rwanda">Rwanda</option>
+      <option value="Saint Barthelemy">Saint Barthelemy</option>
+      <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+      <option value="Saint Lucia">Saint Lucia</option>
+      <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+      <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+      <option value="Samoa">Samoa</option>
+      <option value="San Marino">San Marino</option>
+      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Senegal">Senegal</option>
+      <option value="Serbia">Serbia</option>
+      <option value="Seychelles">Seychelles</option>
+      <option value="Sierra Leone">Sierra Leone</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+      <option value="Slovakia">Slovakia</option>
+      <option value="Slovenia">Slovenia</option>
+      <option value="Solomon Islands">Solomon Islands</option>
+      <option value="Somalia">Somalia</option>
+      <option value="South Africa">South Africa</option>
+      <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+      <option value="South Sudan">South Sudan</option>
+      <option value="Spain">Spain</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="Sudan">Sudan</option>
+      <option value="Suriname">Suriname</option>
+      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+      <option value="Swaziland">Swaziland</option>
+      <option value="Sweden">Sweden</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+      <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+      <option value="Tajikistan">Tajikistan</option>
+      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+      <option value="Thailand">Thailand</option>
+      <option value="Timor-leste">Timor-leste</option>
+      <option value="Togo">Togo</option>
+      <option value="Tokelau">Tokelau</option>
+      <option value="Tonga">Tonga</option>
+      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+      <option value="Tunisia">Tunisia</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Turkmenistan">Turkmenistan</option>
+      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+      <option value="Tuvalu">Tuvalu</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Ukraine">Ukraine</option>
+      <option value="United Arab Emirates">United Arab Emirates</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="United States">United States</option>
+      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Uzbekistan">Uzbekistan</option>
+      <option value="Vanuatu">Vanuatu</option>
+      <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+      <option value="Viet Nam">Viet Nam</option>
+      <option value="Virgin Islands, British">Virgin Islands, British</option>
+      <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+      <option value="Wallis and Futuna">Wallis and Futuna</option>
+      <option value="Western Sahara">Western Sahara</option>
+      <option value="Yemen">Yemen</option>
+      <option value="Zambia">Zambia</option>
+      <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+  </div>
+  <div class="am-u-sm-6">
+    <p>使用 Chosen 后</p>
+    <select data-placeholder="Choose a Country..." class="chosen-select-deselect" style="width:350px;" tabindex="2">
+      <option value=""></option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Aland Islands">Aland Islands</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="American Samoa">American Samoa</option>
+      <option value="Andorra">Andorra</option>
+      <option value="Angola">Angola</option>
+      <option value="Anguilla">Anguilla</option>
+      <option value="Antarctica">Antarctica</option>
+      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Armenia">Armenia</option>
+      <option value="Aruba">Aruba</option>
+      <option value="Australia">Australia</option>
+      <option value="Austria">Austria</option>
+      <option value="Azerbaijan">Azerbaijan</option>
+      <option value="Bahamas">Bahamas</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Barbados">Barbados</option>
+      <option value="Belarus">Belarus</option>
+      <option value="Belgium">Belgium</option>
+      <option value="Belize">Belize</option>
+      <option value="Benin">Benin</option>
+      <option value="Bermuda">Bermuda</option>
+      <option value="Bhutan">Bhutan</option>
+      <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+      <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+      <option value="Botswana">Botswana</option>
+      <option value="Bouvet Island">Bouvet Island</option>
+      <option value="Brazil">Brazil</option>
+      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+      <option value="Brunei Darussalam">Brunei Darussalam</option>
+      <option value="Bulgaria">Bulgaria</option>
+      <option value="Burkina Faso">Burkina Faso</option>
+      <option value="Burundi">Burundi</option>
+      <option value="Cambodia">Cambodia</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Canada">Canada</option>
+      <option value="Cape Verde">Cape Verde</option>
+      <option value="Cayman Islands">Cayman Islands</option>
+      <option value="Central African Republic">Central African Republic</option>
+      <option value="Chad">Chad</option>
+      <option value="Chile">Chile</option>
+      <option value="China">China</option>
+      <option value="Christmas Island">Christmas Island</option>
+      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Comoros">Comoros</option>
+      <option value="Congo">Congo</option>
+      <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+      <option value="Cook Islands">Cook Islands</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Cote D&apos;ivoire">Cote D'ivoire</option>
+      <option value="Croatia">Croatia</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Curacao">Curacao</option>
+      <option value="Cyprus">Cyprus</option>
+      <option value="Czech Republic">Czech Republic</option>
+      <option value="Denmark">Denmark</option>
+      <option value="Djibouti">Djibouti</option>
+      <option value="Dominica">Dominica</option>
+      <option value="Dominican Republic">Dominican Republic</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Egypt">Egypt</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="Equatorial Guinea">Equatorial Guinea</option>
+      <option value="Eritrea">Eritrea</option>
+      <option value="Estonia">Estonia</option>
+      <option value="Ethiopia">Ethiopia</option>
+      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+      <option value="Faroe Islands">Faroe Islands</option>
+      <option value="Fiji">Fiji</option>
+      <option value="Finland">Finland</option>
+      <option value="France">France</option>
+      <option value="French Guiana">French Guiana</option>
+      <option value="French Polynesia">French Polynesia</option>
+      <option value="French Southern Territories">French Southern Territories</option>
+      <option value="Gabon">Gabon</option>
+      <option value="Gambia">Gambia</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Germany">Germany</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Gibraltar">Gibraltar</option>
+      <option value="Greece">Greece</option>
+      <option value="Greenland">Greenland</option>
+      <option value="Grenada">Grenada</option>
+      <option value="Guadeloupe">Guadeloupe</option>
+      <option value="Guam">Guam</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="Guernsey">Guernsey</option>
+      <option value="Guinea">Guinea</option>
+      <option value="Guinea-bissau">Guinea-bissau</option>
+      <option value="Guyana">Guyana</option>
+      <option value="Haiti">Haiti</option>
+      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Hong Kong">Hong Kong</option>
+      <option value="Hungary">Hungary</option>
+      <option value="Iceland">Iceland</option>
+      <option value="India">India</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Ireland">Ireland</option>
+      <option value="Isle of Man">Isle of Man</option>
+      <option value="Israel">Israel</option>
+      <option value="Italy">Italy</option>
+      <option value="Jamaica">Jamaica</option>
+      <option value="Japan">Japan</option>
+      <option value="Jersey">Jersey</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Kazakhstan">Kazakhstan</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Kiribati">Kiribati</option>
+      <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People's Republic of</option>
+      <option value="Korea, Republic of">Korea, Republic of</option>
+      <option value="Kuwait">Kuwait</option>
+      <option value="Kyrgyzstan">Kyrgyzstan</option>
+      <option value="Lao People&apos;s Democratic Republic">Lao People's Democratic Republic</option>
+      <option value="Latvia">Latvia</option>
+      <option value="Lebanon">Lebanon</option>
+      <option value="Lesotho">Lesotho</option>
+      <option value="Liberia">Liberia</option>
+      <option value="Libya">Libya</option>
+      <option value="Liechtenstein">Liechtenstein</option>
+      <option value="Lithuania">Lithuania</option>
+      <option value="Luxembourg">Luxembourg</option>
+      <option value="Macao">Macao</option>
+      <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+      <option value="Madagascar">Madagascar</option>
+      <option value="Malawi">Malawi</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Maldives">Maldives</option>
+      <option value="Mali">Mali</option>
+      <option value="Malta">Malta</option>
+      <option value="Marshall Islands">Marshall Islands</option>
+      <option value="Martinique">Martinique</option>
+      <option value="Mauritania">Mauritania</option>
+      <option value="Mauritius">Mauritius</option>
+      <option value="Mayotte">Mayotte</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+      <option value="Moldova, Republic of">Moldova, Republic of</option>
+      <option value="Monaco">Monaco</option>
+      <option value="Mongolia">Mongolia</option>
+      <option value="Montenegro">Montenegro</option>
+      <option value="Montserrat">Montserrat</option>
+      <option value="Morocco">Morocco</option>
+      <option value="Mozambique">Mozambique</option>
+      <option value="Myanmar">Myanmar</option>
+      <option value="Namibia">Namibia</option>
+      <option value="Nauru">Nauru</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="New Caledonia">New Caledonia</option>
+      <option value="New Zealand">New Zealand</option>
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="Niger">Niger</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Niue">Niue</option>
+      <option value="Norfolk Island">Norfolk Island</option>
+      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+      <option value="Norway">Norway</option>
+      <option value="Oman">Oman</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Palau">Palau</option>
+      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+      <option value="Panama">Panama</option>
+      <option value="Papua New Guinea">Papua New Guinea</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Peru">Peru</option>
+      <option value="Philippines">Philippines</option>
+      <option value="Pitcairn">Pitcairn</option>
+      <option value="Poland">Poland</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Puerto Rico">Puerto Rico</option>
+      <option value="Qatar">Qatar</option>
+      <option value="Reunion">Reunion</option>
+      <option value="Romania">Romania</option>
+      <option value="Russian Federation">Russian Federation</option>
+      <option value="Rwanda">Rwanda</option>
+      <option value="Saint Barthelemy">Saint Barthelemy</option>
+      <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+      <option value="Saint Lucia">Saint Lucia</option>
+      <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+      <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+      <option value="Samoa">Samoa</option>
+      <option value="San Marino">San Marino</option>
+      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Senegal">Senegal</option>
+      <option value="Serbia">Serbia</option>
+      <option value="Seychelles">Seychelles</option>
+      <option value="Sierra Leone">Sierra Leone</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+      <option value="Slovakia">Slovakia</option>
+      <option value="Slovenia">Slovenia</option>
+      <option value="Solomon Islands">Solomon Islands</option>
+      <option value="Somalia">Somalia</option>
+      <option value="South Africa">South Africa</option>
+      <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+      <option value="South Sudan">South Sudan</option>
+      <option value="Spain">Spain</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="Sudan">Sudan</option>
+      <option value="Suriname">Suriname</option>
+      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+      <option value="Swaziland">Swaziland</option>
+      <option value="Sweden">Sweden</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+      <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+      <option value="Tajikistan">Tajikistan</option>
+      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+      <option value="Thailand">Thailand</option>
+      <option value="Timor-leste">Timor-leste</option>
+      <option value="Togo">Togo</option>
+      <option value="Tokelau">Tokelau</option>
+      <option value="Tonga">Tonga</option>
+      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+      <option value="Tunisia">Tunisia</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Turkmenistan">Turkmenistan</option>
+      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+      <option value="Tuvalu">Tuvalu</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Ukraine">Ukraine</option>
+      <option value="United Arab Emirates">United Arab Emirates</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="United States">United States</option>
+      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Uzbekistan">Uzbekistan</option>
+      <option value="Vanuatu">Vanuatu</option>
+      <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+      <option value="Viet Nam">Viet Nam</option>
+      <option value="Virgin Islands, British">Virgin Islands, British</option>
+      <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+      <option value="Wallis and Futuna">Wallis and Futuna</option>
+      <option value="Western Sahara">Western Sahara</option>
+      <option value="Yemen">Yemen</option>
+      <option value="Zambia">Zambia</option>
+      <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+  </div>
+</div>
+
+<h3><a name="%E5%A4%9A%E9%80%89%E6%A1%86" class="anchor" href="#%E5%A4%9A%E9%80%89%E6%A1%86"><span class="header-link"></span></a>多选框</h3><div class="am-g">
+  <div class="am-u-sm-6">
+    <p>浏览器默认样式</p>
+    <select data-placeholder="Choose a Country..." style="width:350px;" multiple tabindex="3">
+      <option value=""></option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Aland Islands">Aland Islands</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="American Samoa">American Samoa</option>
+      <option value="Andorra">Andorra</option>
+      <option value="Angola">Angola</option>
+      <option value="Anguilla">Anguilla</option>
+      <option value="Antarctica">Antarctica</option>
+      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Armenia">Armenia</option>
+      <option value="Aruba">Aruba</option>
+      <option value="Australia">Australia</option>
+      <option value="Austria">Austria</option>
+      <option value="Azerbaijan">Azerbaijan</option>
+      <option value="Bahamas">Bahamas</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Barbados">Barbados</option>
+      <option value="Belarus">Belarus</option>
+      <option value="Belgium">Belgium</option>
+      <option value="Belize">Belize</option>
+      <option value="Benin">Benin</option>
+      <option value="Bermuda">Bermuda</option>
+      <option value="Bhutan">Bhutan</option>
+      <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+      <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+      <option value="Botswana">Botswana</option>
+      <option value="Bouvet Island">Bouvet Island</option>
+      <option value="Brazil">Brazil</option>
+      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+      <option value="Brunei Darussalam">Brunei Darussalam</option>
+      <option value="Bulgaria">Bulgaria</option>
+      <option value="Burkina Faso">Burkina Faso</option>
+      <option value="Burundi">Burundi</option>
+      <option value="Cambodia">Cambodia</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Canada">Canada</option>
+      <option value="Cape Verde">Cape Verde</option>
+      <option value="Cayman Islands">Cayman Islands</option>
+      <option value="Central African Republic">Central African Republic</option>
+      <option value="Chad">Chad</option>
+      <option value="Chile">Chile</option>
+      <option value="China">China</option>
+      <option value="Christmas Island">Christmas Island</option>
+      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Comoros">Comoros</option>
+      <option value="Congo">Congo</option>
+      <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+      <option value="Cook Islands">Cook Islands</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Cote D&apos;ivoire">Cote D'ivoire</option>
+      <option value="Croatia">Croatia</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Curacao">Curacao</option>
+      <option value="Cyprus">Cyprus</option>
+      <option value="Czech Republic">Czech Republic</option>
+      <option value="Denmark">Denmark</option>
+      <option value="Djibouti">Djibouti</option>
+      <option value="Dominica">Dominica</option>
+      <option value="Dominican Republic">Dominican Republic</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Egypt">Egypt</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="Equatorial Guinea">Equatorial Guinea</option>
+      <option value="Eritrea">Eritrea</option>
+      <option value="Estonia">Estonia</option>
+      <option value="Ethiopia">Ethiopia</option>
+      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+      <option value="Faroe Islands">Faroe Islands</option>
+      <option value="Fiji">Fiji</option>
+      <option value="Finland">Finland</option>
+      <option value="France">France</option>
+      <option value="French Guiana">French Guiana</option>
+      <option value="French Polynesia">French Polynesia</option>
+      <option value="French Southern Territories">French Southern Territories</option>
+      <option value="Gabon">Gabon</option>
+      <option value="Gambia">Gambia</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Germany">Germany</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Gibraltar">Gibraltar</option>
+      <option value="Greece">Greece</option>
+      <option value="Greenland">Greenland</option>
+      <option value="Grenada">Grenada</option>
+      <option value="Guadeloupe">Guadeloupe</option>
+      <option value="Guam">Guam</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="Guernsey">Guernsey</option>
+      <option value="Guinea">Guinea</option>
+      <option value="Guinea-bissau">Guinea-bissau</option>
+      <option value="Guyana">Guyana</option>
+      <option value="Haiti">Haiti</option>
+      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Hong Kong">Hong Kong</option>
+      <option value="Hungary">Hungary</option>
+      <option value="Iceland">Iceland</option>
+      <option value="India">India</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Ireland">Ireland</option>
+      <option value="Isle of Man">Isle of Man</option>
+      <option value="Israel">Israel</option>
+      <option value="Italy">Italy</option>
+      <option value="Jamaica">Jamaica</option>
+      <option value="Japan">Japan</option>
+      <option value="Jersey">Jersey</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Kazakhstan">Kazakhstan</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Kiribati">Kiribati</option>
+      <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People's Republic of</option>
+      <option value="Korea, Republic of">Korea, Republic of</option>
+      <option value="Kuwait">Kuwait</option>
+      <option value="Kyrgyzstan">Kyrgyzstan</option>
+      <option value="Lao People&apos;s Democratic Republic">Lao People's Democratic Republic</option>
+      <option value="Latvia">Latvia</option>
+      <option value="Lebanon">Lebanon</option>
+      <option value="Lesotho">Lesotho</option>
+      <option value="Liberia">Liberia</option>
+      <option value="Libya">Libya</option>
+      <option value="Liechtenstein">Liechtenstein</option>
+      <option value="Lithuania">Lithuania</option>
+      <option value="Luxembourg">Luxembourg</option>
+      <option value="Macao">Macao</option>
+      <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+      <option value="Madagascar">Madagascar</option>
+      <option value="Malawi">Malawi</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Maldives">Maldives</option>
+      <option value="Mali">Mali</option>
+      <option value="Malta">Malta</option>
+      <option value="Marshall Islands">Marshall Islands</option>
+      <option value="Martinique">Martinique</option>
+      <option value="Mauritania">Mauritania</option>
+      <option value="Mauritius">Mauritius</option>
+      <option value="Mayotte">Mayotte</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+      <option value="Moldova, Republic of">Moldova, Republic of</option>
+      <option value="Monaco">Monaco</option>
+      <option value="Mongolia">Mongolia</option>
+      <option value="Montenegro">Montenegro</option>
+      <option value="Montserrat">Montserrat</option>
+      <option value="Morocco">Morocco</option>
+      <option value="Mozambique">Mozambique</option>
+      <option value="Myanmar">Myanmar</option>
+      <option value="Namibia">Namibia</option>
+      <option value="Nauru">Nauru</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="New Caledonia">New Caledonia</option>
+      <option value="New Zealand">New Zealand</option>
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="Niger">Niger</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Niue">Niue</option>
+      <option value="Norfolk Island">Norfolk Island</option>
+      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+      <option value="Norway">Norway</option>
+      <option value="Oman">Oman</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Palau">Palau</option>
+      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+      <option value="Panama">Panama</option>
+      <option value="Papua New Guinea">Papua New Guinea</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Peru">Peru</option>
+      <option value="Philippines">Philippines</option>
+      <option value="Pitcairn">Pitcairn</option>
+      <option value="Poland">Poland</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Puerto Rico">Puerto Rico</option>
+      <option value="Qatar">Qatar</option>
+      <option value="Reunion">Reunion</option>
+      <option value="Romania">Romania</option>
+      <option value="Russian Federation">Russian Federation</option>
+      <option value="Rwanda">Rwanda</option>
+      <option value="Saint Barthelemy">Saint Barthelemy</option>
+      <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+      <option value="Saint Lucia">Saint Lucia</option>
+      <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+      <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+      <option value="Samoa">Samoa</option>
+      <option value="San Marino">San Marino</option>
+      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Senegal">Senegal</option>
+      <option value="Serbia">Serbia</option>
+      <option value="Seychelles">Seychelles</option>
+      <option value="Sierra Leone">Sierra Leone</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+      <option value="Slovakia">Slovakia</option>
+      <option value="Slovenia">Slovenia</option>
+      <option value="Solomon Islands">Solomon Islands</option>
+      <option value="Somalia">Somalia</option>
+      <option value="South Africa">South Africa</option>
+      <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+      <option value="South Sudan">South Sudan</option>
+      <option value="Spain">Spain</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="Sudan">Sudan</option>
+      <option value="Suriname">Suriname</option>
+      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+      <option value="Swaziland">Swaziland</option>
+      <option value="Sweden">Sweden</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+      <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+      <option value="Tajikistan">Tajikistan</option>
+      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+      <option value="Thailand">Thailand</option>
+      <option value="Timor-leste">Timor-leste</option>
+      <option value="Togo">Togo</option>
+      <option value="Tokelau">Tokelau</option>
+      <option value="Tonga">Tonga</option>
+      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+      <option value="Tunisia">Tunisia</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Turkmenistan">Turkmenistan</option>
+      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+      <option value="Tuvalu">Tuvalu</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Ukraine">Ukraine</option>
+      <option value="United Arab Emirates">United Arab Emirates</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="United States">United States</option>
+      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Uzbekistan">Uzbekistan</option>
+      <option value="Vanuatu">Vanuatu</option>
+      <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+      <option value="Viet Nam">Viet Nam</option>
+      <option value="Virgin Islands, British">Virgin Islands, British</option>
+      <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+      <option value="Wallis and Futuna">Wallis and Futuna</option>
+      <option value="Western Sahara">Western Sahara</option>
+      <option value="Yemen">Yemen</option>
+      <option value="Zambia">Zambia</option>
+      <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+  </div>
+  <div class="am-u-sm-6">
+    <p>使用 Chosen 后</p>
+    <select data-placeholder="Choose a Country..." class="chosen-select" multiple style="width:350px;" tabindex="4">
+      <option value=""></option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Aland Islands">Aland Islands</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="American Samoa">American Samoa</option>
+      <option value="Andorra">Andorra</option>
+      <option value="Angola">Angola</option>
+      <option value="Anguilla">Anguilla</option>
+      <option value="Antarctica">Antarctica</option>
+      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Armenia">Armenia</option>
+      <option value="Aruba">Aruba</option>
+      <option value="Australia">Australia</option>
+      <option value="Austria">Austria</option>
+      <option value="Azerbaijan">Azerbaijan</option>
+      <option value="Bahamas">Bahamas</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Barbados">Barbados</option>
+      <option value="Belarus">Belarus</option>
+      <option value="Belgium">Belgium</option>
+      <option value="Belize">Belize</option>
+      <option value="Benin">Benin</option>
+      <option value="Bermuda">Bermuda</option>
+      <option value="Bhutan">Bhutan</option>
+      <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+      <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+      <option value="Botswana">Botswana</option>
+      <option value="Bouvet Island">Bouvet Island</option>
+      <option value="Brazil">Brazil</option>
+      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+      <option value="Brunei Darussalam">Brunei Darussalam</option>
+      <option value="Bulgaria">Bulgaria</option>
+      <option value="Burkina Faso">Burkina Faso</option>
+      <option value="Burundi">Burundi</option>
+      <option value="Cambodia">Cambodia</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Canada">Canada</option>
+      <option value="Cape Verde">Cape Verde</option>
+      <option value="Cayman Islands">Cayman Islands</option>
+      <option value="Central African Republic">Central African Republic</option>
+      <option value="Chad">Chad</option>
+      <option value="Chile">Chile</option>
+      <option value="China">China</option>
+      <option value="Christmas Island">Christmas Island</option>
+      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Comoros">Comoros</option>
+      <option value="Congo">Congo</option>
+      <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+      <option value="Cook Islands">Cook Islands</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Cote D&apos;ivoire">Cote D'ivoire</option>
+      <option value="Croatia">Croatia</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Curacao">Curacao</option>
+      <option value="Cyprus">Cyprus</option>
+      <option value="Czech Republic">Czech Republic</option>
+      <option value="Denmark">Denmark</option>
+      <option value="Djibouti">Djibouti</option>
+      <option value="Dominica">Dominica</option>
+      <option value="Dominican Republic">Dominican Republic</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Egypt">Egypt</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="Equatorial Guinea">Equatorial Guinea</option>
+      <option value="Eritrea">Eritrea</option>
+      <option value="Estonia">Estonia</option>
+      <option value="Ethiopia">Ethiopia</option>
+      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+      <option value="Faroe Islands">Faroe Islands</option>
+      <option value="Fiji">Fiji</option>
+      <option value="Finland">Finland</option>
+      <option value="France">France</option>
+      <option value="French Guiana">French Guiana</option>
+      <option value="French Polynesia">French Polynesia</option>
+      <option value="French Southern Territories">French Southern Territories</option>
+      <option value="Gabon">Gabon</option>
+      <option value="Gambia">Gambia</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Germany">Germany</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Gibraltar">Gibraltar</option>
+      <option value="Greece">Greece</option>
+      <option value="Greenland">Greenland</option>
+      <option value="Grenada">Grenada</option>
+      <option value="Guadeloupe">Guadeloupe</option>
+      <option value="Guam">Guam</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="Guernsey">Guernsey</option>
+      <option value="Guinea">Guinea</option>
+      <option value="Guinea-bissau">Guinea-bissau</option>
+      <option value="Guyana">Guyana</option>
+      <option value="Haiti">Haiti</option>
+      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Hong Kong">Hong Kong</option>
+      <option value="Hungary">Hungary</option>
+      <option value="Iceland">Iceland</option>
+      <option value="India">India</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Ireland">Ireland</option>
+      <option value="Isle of Man">Isle of Man</option>
+      <option value="Israel">Israel</option>
+      <option value="Italy">Italy</option>
+      <option value="Jamaica">Jamaica</option>
+      <option value="Japan">Japan</option>
+      <option value="Jersey">Jersey</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Kazakhstan">Kazakhstan</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Kiribati">Kiribati</option>
+      <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People's Republic of</option>
+      <option value="Korea, Republic of">Korea, Republic of</option>
+      <option value="Kuwait">Kuwait</option>
+      <option value="Kyrgyzstan">Kyrgyzstan</option>
+      <option value="Lao People&apos;s Democratic Republic">Lao People's Democratic Republic</option>
+      <option value="Latvia">Latvia</option>
+      <option value="Lebanon">Lebanon</option>
+      <option value="Lesotho">Lesotho</option>
+      <option value="Liberia">Liberia</option>
+      <option value="Libya">Libya</option>
+      <option value="Liechtenstein">Liechtenstein</option>
+      <option value="Lithuania">Lithuania</option>
+      <option value="Luxembourg">Luxembourg</option>
+      <option value="Macao">Macao</option>
+      <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+      <option value="Madagascar">Madagascar</option>
+      <option value="Malawi">Malawi</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Maldives">Maldives</option>
+      <option value="Mali">Mali</option>
+      <option value="Malta">Malta</option>
+      <option value="Marshall Islands">Marshall Islands</option>
+      <option value="Martinique">Martinique</option>
+      <option value="Mauritania">Mauritania</option>
+      <option value="Mauritius">Mauritius</option>
+      <option value="Mayotte">Mayotte</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+      <option value="Moldova, Republic of">Moldova, Republic of</option>
+      <option value="Monaco">Monaco</option>
+      <option value="Mongolia">Mongolia</option>
+      <option value="Montenegro">Montenegro</option>
+      <option value="Montserrat">Montserrat</option>
+      <option value="Morocco">Morocco</option>
+      <option value="Mozambique">Mozambique</option>
+      <option value="Myanmar">Myanmar</option>
+      <option value="Namibia">Namibia</option>
+      <option value="Nauru">Nauru</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Netherlands">Netherlands</option>
+      <option value="New Caledonia">New Caledonia</option>
+      <option value="New Zealand">New Zealand</option>
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="Niger">Niger</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Niue">Niue</option>
+      <option value="Norfolk Island">Norfolk Island</option>
+      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+      <option value="Norway">Norway</option>
+      <option value="Oman">Oman</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Palau">Palau</option>
+      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+      <option value="Panama">Panama</option>
+      <option value="Papua New Guinea">Papua New Guinea</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Peru">Peru</option>
+      <option value="Philippines">Philippines</option>
+      <option value="Pitcairn">Pitcairn</option>
+      <option value="Poland">Poland</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Puerto Rico">Puerto Rico</option>
+      <option value="Qatar">Qatar</option>
+      <option value="Reunion">Reunion</option>
+      <option value="Romania">Romania</option>
+      <option value="Russian Federation">Russian Federation</option>
+      <option value="Rwanda">Rwanda</option>
+      <option value="Saint Barthelemy">Saint Barthelemy</option>
+      <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+      <option value="Saint Lucia">Saint Lucia</option>
+      <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+      <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+      <option value="Samoa">Samoa</option>
+      <option value="San Marino">San Marino</option>
+      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Senegal">Senegal</option>
+      <option value="Serbia">Serbia</option>
+      <option value="Seychelles">Seychelles</option>
+      <option value="Sierra Leone">Sierra Leone</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+      <option value="Slovakia">Slovakia</option>
+      <option value="Slovenia">Slovenia</option>
+      <option value="Solomon Islands">Solomon Islands</option>
+      <option value="Somalia">Somalia</option>
+      <option value="South Africa">South Africa</option>
+      <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+      <option value="South Sudan">South Sudan</option>
+      <option value="Spain">Spain</option>
+      <option value="Sri Lanka">Sri Lanka</option>
+      <option value="Sudan">Sudan</option>
+      <option value="Suriname">Suriname</option>
+      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+      <option value="Swaziland">Swaziland</option>
+      <option value="Sweden">Sweden</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+      <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+      <option value="Tajikistan">Tajikistan</option>
+      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+      <option value="Thailand">Thailand</option>
+      <option value="Timor-leste">Timor-leste</option>
+      <option value="Togo">Togo</option>
+      <option value="Tokelau">Tokelau</option>
+      <option value="Tonga">Tonga</option>
+      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+      <option value="Tunisia">Tunisia</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Turkmenistan">Turkmenistan</option>
+      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+      <option value="Tuvalu">Tuvalu</option>
+      <option value="Uganda">Uganda</option>
+      <option value="Ukraine">Ukraine</option>
+      <option value="United Arab Emirates">United Arab Emirates</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="United States">United States</option>
+      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Uzbekistan">Uzbekistan</option>
+      <option value="Vanuatu">Vanuatu</option>
+      <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+      <option value="Viet Nam">Viet Nam</option>
+      <option value="Virgin Islands, British">Virgin Islands, British</option>
+      <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+      <option value="Wallis and Futuna">Wallis and Futuna</option>
+      <option value="Western Sahara">Western Sahara</option>
+      <option value="Yemen">Yemen</option>
+      <option value="Zambia">Zambia</option>
+      <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+  </div>
+</div>
+
+<h3><a name="%3Ccode%3Eoptgroup%3C%2Fcode%3E%20%E6%94%AF%E6%8C%81" class="anchor" href="#%3Ccode%3Eoptgroup%3C%2Fcode%3E%20%E6%94%AF%E6%8C%81"><span class="header-link"></span></a><code>optgroup</code> 支持</h3><div class="am-g">
+  <div class="am-u-sm-6">
+    <p>分组的单选框</p>
+    <select data-placeholder="Your Favorite Football Team" style="width:350px;" class="chosen-select" tabindex="5">
+      <option value=""></option>
+      <optgroup label="NFC EAST">
+        <option>Dallas Cowboys</option>
+        <option>New York Giants</option>
+        <option>Philadelphia Eagles</option>
+        <option>Washington Redskins</option>
+      </optgroup>
+      <optgroup label="NFC NORTH">
+        <option>Chicago Bears</option>
+        <option>Detroit Lions</option>
+        <option>Green Bay Packers</option>
+        <option>Minnesota Vikings</option>
+      </optgroup>
+      <optgroup label="NFC SOUTH">
+        <option>Atlanta Falcons</option>
+        <option>Carolina Panthers</option>
+        <option>New Orleans Saints</option>
+        <option>Tampa Bay Buccaneers</option>
+      </optgroup>
+      <optgroup label="NFC WEST">
+        <option>Arizona Cardinals</option>
+        <option>St. Louis Rams</option>
+        <option>San Francisco 49ers</option>
+        <option>Seattle Seahawks</option>
+      </optgroup>
+      <optgroup label="AFC EAST">
+        <option>Buffalo Bills</option>
+        <option>Miami Dolphins</option>
+        <option>New England Patriots</option>
+        <option>New York Jets</option>
+      </optgroup>
+      <optgroup label="AFC NORTH">
+        <option>Baltimore Ravens</option>
+        <option>Cincinnati Bengals</option>
+        <option>Cleveland Browns</option>
+        <option>Pittsburgh Steelers</option>
+      </optgroup>
+      <optgroup label="AFC SOUTH">
+        <option>Houston Texans</option>
+        <option>Indianapolis Colts</option>
+        <option>Jacksonville Jaguars</option>
+        <option>Tennessee Titans</option>
+      </optgroup>
+      <optgroup label="AFC WEST">
+        <option>Denver Broncos</option>
+        <option>Kansas City Chiefs</option>
+        <option>Oakland Raiders</option>
+        <option>San Diego Chargers</option>
+      </optgroup>
+    </select>
+  </div>
+  <div class="am-u-sm-6">
+    <p>分组的多选框</p>
+    <select data-placeholder="Your Favorite Football Team" style="width:350px;" class="chosen-select" multiple tabindex="6">
+      <option value=""></option>
+      <optgroup label="NFC EAST">
+        <option>Dallas Cowboys</option>
+        <option>New York Giants</option>
+        <option>Philadelphia Eagles</option>
+        <option>Washington Redskins</option>
+      </optgroup>
+      <optgroup label="NFC NORTH">
+        <option>Chicago Bears</option>
+        <option>Detroit Lions</option>
+        <option>Green Bay Packers</option>
+        <option>Minnesota Vikings</option>
+      </optgroup>
+      <optgroup label="NFC SOUTH">
+        <option>Atlanta Falcons</option>
+        <option>Carolina Panthers</option>
+        <option>New Orleans Saints</option>
+        <option>Tampa Bay Buccaneers</option>
+      </optgroup>
+      <optgroup label="NFC WEST">
+        <option>Arizona Cardinals</option>
+        <option>St. Louis Rams</option>
+        <option>San Francisco 49ers</option>
+        <option>Seattle Seahawks</option>
+      </optgroup>
+      <optgroup label="AFC EAST">
+        <option>Buffalo Bills</option>
+        <option>Miami Dolphins</option>
+        <option>New England Patriots</option>
+        <option>New York Jets</option>
+      </optgroup>
+      <optgroup label="AFC NORTH">
+        <option>Baltimore Ravens</option>
+        <option>Cincinnati Bengals</option>
+        <option>Cleveland Browns</option>
+        <option>Pittsburgh Steelers</option>
+      </optgroup>
+      <optgroup label="AFC SOUTH">
+        <option>Houston Texans</option>
+        <option>Indianapolis Colts</option>
+        <option>Jacksonville Jaguars</option>
+        <option>Tennessee Titans</option>
+      </optgroup>
+      <optgroup label="AFC WEST">
+        <option>Denver Broncos</option>
+        <option>Kansas City Chiefs</option>
+        <option>Oakland Raiders</option>
+        <option>San Diego Chargers</option>
+      </optgroup>
+    </select>
+  </div>
+</div>
+
+<h3><a name="%E9%80%89%E4%B8%AD%E3%80%81%E7%A6%81%E7%94%A8%E5%B1%9E%E6%80%A7%E6%94%AF%E6%8C%81" class="anchor" href="#%E9%80%89%E4%B8%AD%E3%80%81%E7%A6%81%E7%94%A8%E5%B1%9E%E6%80%A7%E6%94%AF%E6%8C%81"><span class="header-link"></span></a>选中、禁用属性支持</h3><p>Chosen 会自动高亮选中的项，禁用的项应用灰色并禁止选择。</p>
+<p><strong>示例：包含选中、禁用属性的单选框</strong></p>
+<div class="doc-example"><select data-placeholder="Your Favorite Type of Bear" style="min-width:300px;" class="chosen-select" tabindex="7">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option selected>Sloth Bear</option>
+  <option disabled>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option disabled>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Type of Bear"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"min-width:300px;"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"7"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><p><strong>示例：包含选中、禁用属性的多选框</strong></p>
+<div class="doc-example"><select data-placeholder="Your Favorite Types of Bear" style="min-width:300px;" multiple class="chosen-select" tabindex="8">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option selected>Sloth Bear</option>
+  <option disabled>Sun Bear</option>
+  <option selected>Polar Bear</option>
+  <option disabled>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Types of Bear"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"min-width:300px;"</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><h3><a name="%E9%9A%90%E8%97%8F%E6%90%9C%E7%B4%A2%E6%A1%86" class="anchor" href="#%E9%9A%90%E8%97%8F%E6%90%9C%E7%B4%A2%E6%A1%86"><span class="header-link"></span></a>隐藏搜索框</h3><p>设置 <code>disable_search_threshold</code> 选项可以设置小于 <code>n</code> 项时隐藏搜索框。</p>
+<div class="doc-example"><select data-placeholder="Your Favorite Type of Bear" style="width:350px;" class="chosen-select-no-single" tabindex="9">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option selected disabled>Sloth Bear</option>
+  <option disabled>Sun Bear</option>
+  <option selected disabled>Paddington Bear</option>
+  <option selected>Polar Bear</option>
+  <option disabled>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).chosen({disable_search_threshold: <span class="hljs-number">10</span>});</code></pre></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Type of Bear"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:350px;"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select-no-single"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"9"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span> <span class="hljs-attribute">disabled</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span> <span class="hljs-attribute">disabled</span>&gt;</span>Paddington Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><h3><a name="%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%8D%A0%E4%BD%8D%E6%96%87%E5%AD%97" class="anchor" href="#%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%8D%A0%E4%BD%8D%E6%96%87%E5%AD%97"><span class="header-link"></span></a>设置默认占位文字</h3><p>通过 <code>data-placeholder</code> 可以设置默认占位文字。</p>
+<div class="doc-example"><select class="chosen-select" data-placeholder="我是占位文字">
+  <option></option>
+  <option value="">天空海阔 要做最坚强的泡沫</option>
+  <option value="">我喜欢我 让蔷薇开出一种结果</option>
+  <option value="">孤独的沙漠里</option>
+  <option value="">一样盛放的赤裸裸</option>
+  <option value="">多么高兴 在琉璃屋中快乐生活</option>
+  <option value="">对世界说 甚么是光明和磊落</option>
+  <option value="">我就是我 是颜色不一样的烟火</option>
+  <option value="">天空海阔 要做最坚强的泡沫</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select"</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"我是占位文字"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>天空海阔 要做最坚强的泡沫<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>我喜欢我 让蔷薇开出一种结果<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>孤独的沙漠里<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><p><strong>注意：</strong></p>
+<p>浏览器会默认选中单选框的第一个元素，为了显示占位文字，需要将第一个元素设置为空。</p>
+<h3><a name="%E8%AE%BE%E7%BD%AE%E6%B2%A1%E6%9C%89%E6%90%9C%E5%88%B0%E7%BB%93%E6%9E%9C%E6%97%B6%E6%98%BE%E7%A4%BA%E7%9A%84%E6%96%87%E5%AD%97" class="anchor" href="#%E8%AE%BE%E7%BD%AE%E6%B2%A1%E6%9C%89%E6%90%9C%E5%88%B0%E7%BB%93%E6%9E%9C%E6%97%B6%E6%98%BE%E7%A4%BA%E7%9A%84%E6%96%87%E5%AD%97"><span class="header-link"></span></a>设置没有搜到结果时显示的文字</h3><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).chosen({
+  no_results_text: <span class="hljs-string">'木有找到匹配的项！'</span>
+});</code></pre></div><div class="doc-example"><select data-placeholder="Type &apos;C&apos; to view" style="width:350px;" class="chosen-select-no-results" tabindex="10">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option>Sloth Bear</option>
+  <option>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Type &amp;apos;C&amp;apos; to view"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:350px;"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select-no-results"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"10"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><p><strong>多选框</strong>：</p>
+<div class="doc-example"><select data-placeholder="Type &apos;C&apos; to view" style="width:350px;" multiple class="chosen-select-no-results" tabindex="11">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option>Sloth Bear</option>
+  <option>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Type &amp;apos;C&amp;apos; to view"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:350px;"</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select-no-results"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"11"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><h3><a name="%E9%99%90%E5%88%B6%E8%87%B3%E5%A4%9A%E9%80%89%E6%8B%A9%20n%20%E9%A1%B9" class="anchor" href="#%E9%99%90%E5%88%B6%E8%87%B3%E5%A4%9A%E9%80%89%E6%8B%A9%20n%20%E9%A1%B9"><span class="header-link"></span></a>限制至多选择 n 项</h3><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).chosen({
+  max_selected_options: <span class="hljs-number">5</span>
+});</code></pre></div><p>超过最大限制以后继续选择时会触发 <code>chosen:maxselected</code> 事件。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).on(<span class="hljs-string">'chosen:maxselected'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+  <span class="hljs-comment">// ...</span>
+});</code></pre></div><h3><a name="%3Ccode%3Echange%3C%2Fcode%3E%20%2F%20%3Ccode%3Eupdate%3C%2Fcode%3E%20%E4%BA%8B%E4%BB%B6" class="anchor" href="#%3Ccode%3Echange%3C%2Fcode%3E%20%2F%20%3Ccode%3Eupdate%3C%2Fcode%3E%20%E4%BA%8B%E4%BB%B6"><span class="header-link"></span></a><code>change</code> / <code>update</code> 事件</h3><p><strong> <code>change</code> 事件</strong></p>
+<p>当用户选择一个项时会触发 <code>change</code> 事件。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#form_field'</span>).chosen().change(...);</code></pre></div><p><strong>刷新 Chosen</strong></p>
+<p>如果通过 JS 动态插入了 <code>option</code>，可以触发 <code>chosen:updated</code> 通知 Chosen 更新内容。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#form_field'</span>).trigger(<span class="hljs-string">'chosen:updated'</span>);</code></pre></div><h3><a name="%E5%AE%9A%E4%B9%89%E5%AE%BD%E5%BA%A6" class="anchor" href="#%E5%AE%9A%E4%B9%89%E5%AE%BD%E5%BA%A6"><span class="header-link"></span></a>定义宽度</h3><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).chosen({width: <span class="hljs-string">'95%'</span>});</code></pre></div><p><strong>单选框：</strong></p>
+<div class="doc-example"><select data-placeholder="Your Favorite Types of Bear" class="chosen-select-width" tabindex="15">
+  <option value=""></option>
+  <option selected>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option>Sloth Bear</option>
+  <option>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Types of Bear"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select-width"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"15"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><p><strong>多选框：</strong></p>
+<div class="doc-example"><select data-placeholder="Your Favorite Types of Bear" multiple class="chosen-select-width" tabindex="16">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option selected>Giant Panda</option>
+  <option>Sloth Bear</option>
+  <option>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Types of Bear"</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select-width"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"16"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><h3><a name="Label%20%E6%A0%87%E7%AD%BE" class="anchor" href="#Label%20%E6%A0%87%E7%AD%BE"><span class="header-link"></span></a>Label 标签</h3><div class="doc-example"><label for="single-label-example">点击选择单选框：</label>
+<select data-placeholder="Your Favorite Types of Bear" class="chosen-select" style="width:350px;" tabindex="17" id="single-label-example">
+  <option value=""></option>
+  <option selected>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option>Giant Panda</option>
+  <option>Sloth Bear</option>
+  <option>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"single-label-example"</span>&gt;</span>点击选择单选框：<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Types of Bear"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:350px;"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"17"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"single-label-example"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><div class="doc-example"><label for="multiple-label-example">点击选择多选框：</label>
+<select data-placeholder="Your Favorite Types of Bear" multiple
+        class="chosen-select" style="width:350px;" tabindex="18"
+        id="multiple-label-example">
+  <option value=""></option>
+  <option>American Black Bear</option>
+  <option>Asiatic Black Bear</option>
+  <option>Brown Bear</option>
+  <option selected>Giant Panda</option>
+  <option>Sloth Bear</option>
+  <option>Sun Bear</option>
+  <option>Polar Bear</option>
+  <option>Spectacled Bear</option>
+</select></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"multiple-label-example"</span>&gt;</span>点击选择多选框：<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Your Favorite Types of Bear"</span> <span class="hljs-attribute">multiple</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:350px;"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"18"</span>
+        <span class="hljs-attribute">id</span>=<span class="hljs-value">"multiple-label-example"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>American Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Asiatic Black Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Brown Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>&gt;</span>Giant Panda<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sloth Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Sun Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Polar Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Spectacled Bear<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><h2><a name="Credits" class="anchor" href="#Credits"><span class="header-link"></span></a>Credits</h2><ul class="credits">
+  <li>Concept and development by <a href="http://patrickfiller.com">Patrick Filler</a> for <a href="https://getharvest.com">Harvest</a>.</li>
+  <li>Design and CSS by <a href="http://matthewlettini.com">Matthew Lettini</a>.</li>
+  <li>Repository maintained by <a href="https://github.com/pfiller">@pfiller</a>, <a href="https://github.com/kenearley">@kenearley</a>, <a href="https://github.com/stof">@stof</a>, <a href="https://github.com/koenpunt">@koenpunt</a>, and <a href="https://github.com/tjschuck">@tjschuck</a>.</li>
+  <li>Chosen includes <a href="https://github.com/harvesthq/chosen/contributors">contributions by many fine folks</a>.</li>
+</ul>
+
+<footer>
+  &copy; 2011&ndash;2014 <a href="http://www.getharvest.com/">Harvest</a>. Chosen is licensed under the <a href="https://github.com/harvesthq/chosen/blob/master/LICENSE.md">MIT license</a>.
+</footer>
+
+<script src="../amazeui.chosen.js"></script>
+<script type="text/javascript">
+  var config = {
+    '.chosen-select'           : {},
+    '.chosen-select-deselect'  : {allow_single_deselect: true},
+    '.chosen-select-no-single' : {disable_search_threshold:10},
+    '.chosen-select-no-results': {
+      no_results_text:'木有匹配的项目!'
+    },
+    '.chosen-select-width'     : {width:"95%"}
+  };
+  for (var selector in config) {
+    $(selector).chosen(config[selector]);
+  }
+</script>
+
+
+
+    <nav class="amp-pager">
+          <ul class="am-pagination">
+            <li class="am-pagination-next"><a href="options.html">Next &raquo;</a>
+            </li>
+          </ul>
+    </nav>
+  </div>
+</section>
+
+<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="javascript: void(0)" data-am-popover="{content: 'Amaze UI 交流 Q 群：374946651'}" title="Amaze UI 用户交流群" target="_blank"><span class="am-icon-qq"></span></a></li><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/allmobilize/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://a.static.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
+<script src="http://a.static.amazeui.org/assets/plugin/js/app.min.js"></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+</html>

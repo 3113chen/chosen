@@ -1,0 +1,246 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Chosen 选项列表 | Amaze UI 插件</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png"
+        href="http://a.static.amazeui.org/assets/i/favicon.png">
+  <link rel="stylesheet"
+        href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
+  <link rel="stylesheet" href="http://a.static.amazeui.org/assets/plugin/css/app.min.css">
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../amazeui.chosen.css"/>
+</head>
+<body class="am-plugin">
+<header class="am-topbar am-topbar-inverse">
+  <div class="am-container">
+    <h1 class="am-topbar-brand">
+      <a href="http://amazeui.org" class="am-text-ir">Amaze UI</a>
+      <span class="am-badge am-badge-danger">Plugin</span>
+    </h1>
+  </div>
+</header>
+<section class="amp-banner">
+  <div class="am-container">
+    <h1>Amaze UI Chosen</h1>
+    <p class="">使用 Amaze UI 样式风格的 jQuery Chosen 插件。</p>
+      <p>
+        <a class="github-button" href="https://github.com/amazeui/chosen">Star</a>
+        <a class="github-button" href="https://github.com/amazeui/chosen">Fork</a>
+        <a class="github-button" href="https://github.com/amazeui/chosen/archive/master.zip">Download</a>
+      </p>
+  </div>
+</section>
+
+<section class="amp-main">
+  <div class="am-container">
+    <h1><a name="Chosen%20%E9%80%89%E9%A1%B9%E5%88%97%E8%A1%A8" class="anchor" href="#Chosen%20%E9%80%89%E9%A1%B9%E5%88%97%E8%A1%A8"><span class="header-link"></span></a>Chosen 选项列表</h1><hr>
+<h2><a name="%E9%80%9A%E8%BF%87%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E7%9A%84%E9%80%89%E9%A1%B9" class="anchor" href="#%E9%80%9A%E8%BF%87%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E7%9A%84%E9%80%89%E9%A1%B9"><span class="header-link"></span></a>通过参数传递的选项</h2><p>以下参数在实例化的时候通过参数设置。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.my_select_box'</span>).chosen({
+  disable_search_threshold: <span class="hljs-number">10</span>,
+  no_results_text: <span class="hljs-string">'Oops, nothing found!'</span>,
+  width: <span class="hljs-string">'95%'</span>
+});</code></pre></div><table class="am-table am-table-bordered am-table-striped">
+  <tr>
+    <th>选项</th>
+    <th>默认值</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td>allow_single_deselect</td>
+    <td>false</td>
+    <td>设置为 <code class="language-javascript">true</code> 时非必选的单选框会显示清除选中项图标</td>
+  </tr>
+  <tr>
+    <td>disable_search</td>
+    <td>false</td>
+    <td>设置为 <code class="language-javascript">true</code> 隐藏单选框的搜索框</td>
+  </tr>
+  <tr>
+    <td>disable_search_threshold</td>
+    <td>0</td>
+    <td>少于 <code>n</code> 项时隐藏搜索框</td>
+  </tr>
+  <tr>
+    <td>enable_split_word_search</td>
+    <td>true</td>
+    <td>是否开启分词搜索，默认开启</td>
+  </tr>
+  <tr>
+    <td>inherit_select_classes</td>
+    <td>false</td>
+    <td>是否继承 select 元素的 class，如果设为 <code class="language-javascript">true</code>，Chosen 将把 select 的 class 添加到容器上</td>
+  </tr>
+  <tr>
+    <td>max_selected_options</td>
+    <td>Infinity</td>
+    <td>最多选择项数，达到最大限制时会触发 <code class="language-javascript">chosen:maxselected</code> 事件</td>
+  </tr>
+  <tr>
+    <td>no_results_text</td>
+    <td>"No results match"</td>
+    <td>没有搜索到匹配项时显示的文字</td>
+  </tr>
+  <tr>
+    <td>placeholder_text_multiple</td>
+    <td>"Select Some Options"</td>
+    <td>多选框没有选中项时显示的占位文字</td>
+  </tr>
+  <tr>
+    <td>placeholder_text_single</td>
+    <td>"Select an Option"</td>
+    <td>单选框没有选中项时显示的占位文字</td>
+  </tr>
+  <tr>
+    <td>search_contains</td>
+    <td>false</td>
+    <td>搜素包含项，默认从第一个字符开始匹配</td>
+  </tr>
+  <tr>
+    <td>single_backstroke_delete</td>
+    <td>true</td>
+    <td>多选框中使用退格键删除选中项目，如果设为 <code class="language-javascript">false</code>，第一次按 delete/backspace 会高亮最好一个选中项目，再按会删除该项</td>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td>Original select width.</td>
+    <td>Chosen 生成的选择框宽度，默认为和原 select 宽度保持一致</td>
+  </tr>
+  <tr>
+    <td>display_disabled_options</td>
+    <td>true</td>
+    <td>是否显示禁止选择的项目</td>
+  </tr>
+  <tr>
+    <td>display_selected_options</td>
+    <td>true</td>
+    <td>
+      多选框是否在下拉列表中显示已经选中的项
+    </td>
+  </tr>
+</table>
+
+
+<h2><a name="%E5%B1%9E%E6%80%A7" class="anchor" href="#%E5%B1%9E%E6%80%A7"><span class="header-link"></span></a>属性</h2><p>可以通过在 <code>&lt;select&gt;</code> 上设置属性传递给 Chosen。</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"my_select_box"</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"Select Your Options"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>Option 1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span> <span class="hljs-attribute">selected</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span></code></pre></div><table class="am-table am-table-bordered am-table-striped">
+  <tr>
+    <th>属性</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td>data-placeholder</td>
+    <td>
+      占位符文字 <br/>
+      <strong>注意：</strong> 改属性会覆盖 <code class="language-javascript">placeholder_text_multiple</code> 或 <code class="language-javascript">placeholder_text_single</code> 选项。
+    </td>
+  </tr>
+  <tr>
+    <td>multiple</td>
+    <td>有此属性的 select 会渲染成可以多选的 Chosen 选框</td>
+  </tr>
+  <tr>
+    <td>selected, disabled</td>
+    <td>设置选中、禁止状态，Chosen 会读取这些属性</td>
+  </tr>
+</table>
+
+<h2><a name="%E8%A7%A6%E5%8F%91%E4%BA%8B%E4%BB%B6" class="anchor" href="#%E8%A7%A6%E5%8F%91%E4%BA%8B%E4%BB%B6"><span class="header-link"></span></a>触发事件</h2><p>Chosen 会在源 <code>&lt;select&gt;</code> 元素上触发事件。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.my_select_box'</span>).on(<span class="hljs-string">'change'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e, params)</span> </span>{
+  do_something(e, params);
+});</code></pre></div><table class="am-table am-table-bordered am-table-striped">
+  <tr>
+    <th>事件</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td>change</td>
+    <td>
+      Chosen 触发标准的 change 事件，同时会传递 <code class="language-javascript">selected</code> or <code class="language-javascript">deselected</code> 参数， 方便用户获取改变的选项</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td>chosen:ready</td>
+    <td>Chosen 实例化完成时触发</td>
+  </tr>
+  <tr>
+    <td>chosen:maxselected</td>
+    <td>超过 <code class="language-javascript">max_selected_options</code> 设置时触发</td>
+  </tr>
+  <tr>
+    <td>chosen:showing_dropdown</td>
+    <td>Chosen 下拉选框打开完成时触发</td>
+  </tr>
+  <tr>
+    <td>chosen:hiding_dropdown</td>
+    <td>Chosen 下拉选框关闭完成时触发</td>
+  </tr>
+  <tr>
+    <td>chosen:no_results</td>
+    <td>搜索没有匹配项时触发</td>
+  </tr>
+</table>
+
+<p><strong>注意：</strong>所有 Chosen 自定义事件 都包含 Chosen 实例 <code>chosen</code> 对象作为参数。</p>
+<h2><a name="Chosen%20%E7%9B%91%E5%90%AC%E7%9A%84%E4%BA%8B%E4%BB%B6" class="anchor" href="#Chosen%20%E7%9B%91%E5%90%AC%E7%9A%84%E4%BA%8B%E4%BB%B6"><span class="header-link"></span></a>Chosen 监听的事件</h2><p>通过在 <code>&lt;select&gt;</code> 元素上触发特定事件可以调用 Chosen 的监听函数。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript"><span class="hljs-comment">// tell Chosen that a select has changed</span>
+$(<span class="hljs-string">'.my_select_box'</span>).trigger(<span class="hljs-string">'chosen:updated'</span>);</code></pre></div><table class="am-table am-table-bordered am-table-striped">
+  <tr>
+    <th>事件</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td>chosen:updated</td>
+    <td>通过 JS 改变 select 元素选项时应该触发此事件，以更新 Chosen 生成的选框</td>
+  </tr>
+  <tr>
+    <td>chosen:activate</td>
+    <td>相当于 HTML focus 事件</td>
+  </tr>
+  <tr>
+    <td>chosen:open</td>
+    <td>激活 Chosen 并显示搜索结果</td>
+  </tr>
+  <tr>
+    <td>chosen:close</td>
+    <td>关闭 Chosen 并隐藏搜索结果</td>
+  </tr>
+</table>
+
+<footer>
+  &copy; 2011&ndash;2014 <a href="http://www.getharvest.com/">Harvest</a>. Chosen is licensed under the <a href="https://github.com/harvesthq/chosen/blob/master/LICENSE.md">MIT license</a>.
+</footer>
+
+
+    <nav class="amp-pager">
+        <ul class="am-pagination">
+          <li class="am-pagination-prev"><a href="demo.html">&laquo; Prev</a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+</section>
+
+<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="javascript: void(0)" data-am-popover="{content: 'Amaze UI 交流 Q 群：374946651'}" title="Amaze UI 用户交流群" target="_blank"><span class="am-icon-qq"></span></a></li><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/allmobilize/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://a.static.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
+<script src="http://a.static.amazeui.org/assets/plugin/js/app.min.js"></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+</html>
