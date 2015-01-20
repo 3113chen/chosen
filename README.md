@@ -1,7 +1,7 @@
 # Amaze UI Chosen
 ---
 
-Chosen 是一个优化 `<select>` 显示、交互效果的 jQuery 插件。
+[Chosen](https://github.com/harvesthq/chosen) 是一个优化 `<select>` 显示、交互效果的 jQuery 插件。
 
 此项目中只是将 Chosen 的样式调整为 Amaze UI 风格，没有修改 JS 源码。
 
