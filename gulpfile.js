@@ -77,6 +77,8 @@ gulp.task('serve', ['default'], function () {
     notify: false,
     server: 'dist',
     logPrefix: 'AMP'
+  }, function(err, bs) {
+    console.log(bs.options.getIn(['urls', 'local']));
   });
 
   gulp.watch('dist/**/*', reload);

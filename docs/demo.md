@@ -1380,8 +1380,55 @@ $('#form_field').chosen().change(...);
 
 如果通过 JS 动态插入了 `option`，可以触发 `chosen:updated` 通知 Chosen 更新内容。
 
+`````html
+<select id="update-chosen" class="chosen-select" data-placeholder="动态改变 option 演示" style="width:350px;">
+  <option></option>
+  <option value="1">天空海阔</option>
+  <option value="2">要做最坚强的泡沫</option>
+  <option value="3">我喜欢我</option>
+  <option value="5">让蔷薇开出一种结果</option>
+  <option value="4">孤独的沙漠里</option>
+</select>
+<hr/>
+
+<button id="chosen-add" type="button" class="am-btn am-btn-primary">添加一个选项</button>
+<script>
+  var $select = $('#update-chosen');
+  var i = 0;
+  $('#chosen-add').on('click', function() {
+    $select.append('<option>动态插入的选项 '+ i +'</option>');
+    i++;
+
+    // 关键点：触发 select 的 `chosen:updated` 事件
+    $select.trigger('chosen:updated');
+  });
+</script>
+`````
+
+```html
+<select id="update-chosen" class="chosen-select" data-placeholder="动态改变 option 演示" style="width:350px;">
+  <option></option>
+  <option value="1">天空海阔</option>
+  <option value="2">要做最坚强的泡沫</option>
+  <option value="3">我喜欢我</option>
+  <option value="5">让蔷薇开出一种结果</option>
+  <option value="4">孤独的沙漠里</option>
+</select>
+<hr/>
+
+<button id="chosen-add" type="button" class="am-btn am-btn-primary">添加一个选项</button>
+```
+
 ```js
-$('#form_field').trigger('chosen:updated');
+var $select = $('#update-chosen');
+var i = 0;
+$('#chosen-add').on('click', function() {
+  $select.append('<option>动态插入的选项 '+ i +'</option>');
+  i++;
+
+  // 关键点：触发 select 的 `chosen:updated` 事件
+  $select.trigger('chosen:updated');
+});
 ```
 
 ### 定义宽度
