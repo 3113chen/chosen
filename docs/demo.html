@@ -1329,7 +1329,46 @@
 <p>当用户选择一个项时会触发 <code>change</code> 事件。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#form_field'</span>).chosen().change(...);</code></pre></div><p><strong>刷新 Chosen</strong></p>
 <p>如果通过 JS 动态插入了 <code>option</code>，可以触发 <code>chosen:updated</code> 通知 Chosen 更新内容。</p>
-<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#form_field'</span>).trigger(<span class="hljs-string">'chosen:updated'</span>);</code></pre></div><h3><a name="%E5%AE%9A%E4%B9%89%E5%AE%BD%E5%BA%A6" class="anchor" href="#%E5%AE%9A%E4%B9%89%E5%AE%BD%E5%BA%A6"><span class="header-link"></span></a>定义宽度</h3><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).chosen({width: <span class="hljs-string">'95%'</span>});</code></pre></div><p><strong>单选框：</strong></p>
+<div class="doc-example"><select id="update-chosen" class="chosen-select" data-placeholder="动态改变 option 演示" style="width:350px;">
+  <option></option>
+  <option value="1">天空海阔</option>
+  <option value="2">要做最坚强的泡沫</option>
+  <option value="3">我喜欢我</option>
+  <option value="5">让蔷薇开出一种结果</option>
+  <option value="4">孤独的沙漠里</option>
+</select>
+<hr/>
+
+<button id="chosen-add" type="button" class="am-btn am-btn-primary">添加一个选项</button>
+<script>
+  var $select = $('#update-chosen');
+  var i = 0;
+  $('#chosen-add').on('click', function() {
+    $select.append('<option>动态插入的选项 '+ i +'</option>');
+    i++;
+
+    // 关键点：触发 select 的 `chosen:updated` 事件
+    $select.trigger('chosen:updated');
+  });
+</script></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"update-chosen"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chosen-select"</span> <span class="hljs-attribute">data-placeholder</span>=<span class="hljs-value">"动态改变 option 演示"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:350px;"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>天空海阔<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span>&gt;</span>要做最坚强的泡沫<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>我喜欢我<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"5"</span>&gt;</span>让蔷薇开出一种结果<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"4"</span>&gt;</span>孤独的沙漠里<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">hr</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chosen-add"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-btn am-btn-primary"</span>&gt;</span>添加一个选项<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript"><span class="hljs-keyword">var</span> $select = $(<span class="hljs-string">'#update-chosen'</span>);
+<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
+$(<span class="hljs-string">'#chosen-add'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  $select.append(<span class="hljs-string">'&lt;option&gt;动态插入的选项 '</span>+ i +<span class="hljs-string">'&lt;/option&gt;'</span>);
+  i++;
+
+  <span class="hljs-comment">// 关键点：触发 select 的 `chosen:updated` 事件</span>
+  $select.trigger(<span class="hljs-string">'chosen:updated'</span>);
+});</code></pre></div><h3><a name="%E5%AE%9A%E4%B9%89%E5%AE%BD%E5%BA%A6" class="anchor" href="#%E5%AE%9A%E4%B9%89%E5%AE%BD%E5%BA%A6"><span class="header-link"></span></a>定义宽度</h3><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'.chosen-select'</span>).chosen({width: <span class="hljs-string">'95%'</span>});</code></pre></div><p><strong>单选框：</strong></p>
 <div class="doc-example"><select data-placeholder="Your Favorite Types of Bear" class="chosen-select-width" tabindex="15">
   <option value=""></option>
   <option selected>American Black Bear</option>
